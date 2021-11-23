@@ -1,0 +1,5 @@
+require('./handle-exit-button')
+require('./handle-entry')
+require('./handle-exit')
+const {keysModule} = require('./keys')
+keysModule.getInstance().loadKeys()

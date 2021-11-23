@@ -1,0 +1,16 @@
+{
+  "name": "pi-skud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "onoff": "^6.0.3",
+    "serialport": "^9.2.7"
+  }
+}
