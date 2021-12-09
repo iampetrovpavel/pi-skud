@@ -30,7 +30,7 @@ const keysModule = (function (){
     var createInstance = function () {
         return {
             getKeys,
-            loadKeys
+            loadKeys,
         }
     }
     return {

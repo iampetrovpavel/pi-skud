@@ -17,7 +17,10 @@ const parserEntry = portEntry.pipe(new Readline({ delimiter: '\r' }));
 parserEntry.on('data', (data)=>{
     console.log("ENTRY KEY: ", data, "Date: ", Date(Date.now()).toString());
     let key = findKey(data)
-    if(!key)return
+    if(!key){
+        api('post', '/access', {action: 1, key: {data}, time: new Date().toISOString()})
+        return
+    }
     open()
     api('post', '/access', {action: 1, key: {key_id: key._id, owner: key.owner, data: key.data}, time: new Date().toISOString()})
 })
