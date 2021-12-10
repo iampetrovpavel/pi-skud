@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=production node index.js",
+    "dev": "nodemon nodemon --ignore 'keys.json'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
+    "colors": "^1.4.0",
     "onoff": "^6.0.3",
     "serialport": "^9.2.7"
   }
